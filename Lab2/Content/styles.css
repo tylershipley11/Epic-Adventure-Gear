@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*=====================================
+              NAVBAR
+  =====================================*/
+
+.navbar ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    z-index: 9999;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    padding: 6px 9px 1px 9px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #232323;
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
+}
+
+.brand svg {
+    margin-right: 4px;
+    height: 35px;
+    width: 35px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 4px 6px;
+}
+
+.nav-items a.active {
+    text-align: center;
+    background-color: #232323;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 14px;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.nav-items a.active:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/*=============================================
+            <CALL TO ACTION> STYLES
+  =============================================*/
+
+.cta-container {
+    width: 100%;
+    height: 550px;
+    background: url(../img/AdventureIMG.jpeg) bottom center no-repeat;
+    background-size: cover;
+}
+
+.cta-container a {
+    text-decoration: none;
+}
+
+.cta-info-container {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.cta-words {
+    color: #fff;
+    font-size: 60px;
+    padding-top: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Button look */
+.cta-btn {
+    width: 200px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Center text & icon horizontally */
+    gap: 8px;
+    /* Space between text and icon container */
+    font-size: 20px;
+    color: #fff;
+    background-color: #232323;
+    border-radius: 65px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    /* if you want the icons to be absolutely positioned inside */
+    overflow: hidden;
+    /* ensures nothing peeks outside the button if scaled */
+}
+
+.cta-btn:hover {
+    background-color: #2d2d2d;
+    width: 210px;
+    height: 65px;
+    transition: 0.3s;
+}
+
+/*==========================================
+                ICON SWAPPING
+  ==========================================*/
+
+/* Container for the icons */
+.icons {
+    position: relative;
+    /* so icons can overlap in the same spot */
+    width: 40px;
+    height: 40px;
+}
+
+/* Both icons share same absolute positioning */
+.chest-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+
+    transition: opacity 0.3s ease;
+    /* Smooth fade */
+    opacity: 0;
+    /* Hidden by default */
+}
+
+/* The closed chest is shown by default */
+.closed {
+    opacity: 1;
+}
+
+/* The open chest is hidden initially */
+.open {
+    opacity: 0;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* On hover, fade out the closed chest and fade in the open chest */
+.cta-btn:hover .closed {
+    opacity: 0;
+}
+
+.cta-btn:hover .open {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px #FFD700);
+}
