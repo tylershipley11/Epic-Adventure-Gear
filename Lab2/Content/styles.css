@@ -84,7 +84,7 @@ body {
 .cta-container {
     width: 100%;
     height: 550px;
-    background: url(../img/AdventureIMG.jpeg) center center no-repeat;
+    background: url(../img/AdventureIMG.jpeg) middle center no-repeat;
     background-size: cover;
 }
 
