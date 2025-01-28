@@ -24,6 +24,7 @@ body {
     background-color: #fff;
     border-radius: 0 0 10px 10px;
     z-index: 9999;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .brand {
@@ -34,7 +35,7 @@ body {
     padding: 6px 9px 1px 9px;
     color: #ffffff;
     text-decoration: none;
-    background-color: #232323;
+    background-color: #000000;
     clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
 }
 
@@ -53,14 +54,14 @@ body {
 
 .nav-items a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: 500;
     padding: 4px 6px;
 }
 
 .nav-items a.active {
     text-align: center;
-    background-color: #232323;
+    background-color: #000000;
     color: #fff;
     border-radius: 30px;
     padding: 7px 14px;
@@ -117,7 +118,7 @@ body {
     /* Space between text and icon container */
     font-size: 20px;
     color: #fff;
-    background-color: #232323;
+    background-color: #000000;
     border-radius: 65px;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -128,9 +129,7 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #2d2d2d;
-    width: 210px;
-    height: 65px;
+    background-color: #232323;
     transition: 0.3s;
 }
 
@@ -171,7 +170,7 @@ body {
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-/* On hover, fade out the closed chest and fade in the open chest */
+/* On hover*/
 .cta-btn:hover .closed {
     opacity: 0;
 }
