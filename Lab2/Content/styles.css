@@ -9,7 +9,7 @@ body {
 
 .navbar ul li {
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 5px;
     list-style: none;
 }
 
@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 10px 20px;
+    padding: 0px 20px;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -27,22 +27,12 @@ body {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
-    padding: 6px 9px 1px 9px;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #232323;
-    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 100% 34%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 67% 0%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 51% 11%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 42% 3%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 28% 9%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 10% 0%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 39%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%);
-}
-
 .brand svg {
-    margin-right: 4px;
-    height: 35px;
-    width: 35px;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    fill: #232323;
 }
 
 .nav-items {
@@ -264,4 +254,117 @@ body {
 
 .text-below h3 {
     text-align: center;
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
 }
+
+@media (max-width: 670px){
+    .card{
+        width: 75%;
+    }
+    
+}
+
+@media (max-width: 324px){
+    .card{
+        font-size: 12px;
+    }
+    
+}
+
+
+
+
+/*===========================================
+                FOOTER
+===========================================*/
+
+.footer {
+    background-color: #232323;
+    color: #fefefe;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer {
+    color: #fefefe;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .heading{
+    color: #fefefe;
+    max-width: 1010px;
+    width: 100px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+  .heading img{
+    display: flex;
+    margin: auto;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      margin-left: 10px;
+      text-align: center;
+    }
+  
+    .footer {
+      position: unset;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer, header {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
+    }
+  }
