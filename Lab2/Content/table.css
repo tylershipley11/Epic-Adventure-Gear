@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+
+
+.table-container {
+    width: 90%;
+    overflow: hidden;
+    border-radius: 14px;
+    margin: auto;
+    padding: 10px;
+}
+
+.comparison-table caption{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+}
+.comparison-table thead {
+    background-color: #232323;
+    color: white;
+}
+.mainHead th:first-child {
+    border-top-left-radius: 14px;
+}
+.mainHead th:last-child {
+    border-top-right-radius: 14px;
+}
+.comparison-table th, .comparison-table td {
+    padding: 12px;
+    text-align: center;
+}
+.comparison-table tr:last-child td:first-child {
+    border-bottom-left-radius: 14px;
+}
+.comparison-table tr:last-child td:last-child {
+    border-bottom-right-radius: 14px;
+}
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.warning{
+    border-top: solid #2323 2px;
+}
+
+.weather{
+    color: #333;
+}
+.back-link{
+    display: flex;
+}
+
+.back-link a {
+    padding: 8px;
+    margin: 20px auto;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #232323;
+    border-radius: 20px;
+    justify-content: center;
+    width: 240px;
+    text-align: center;
+}
+.back-link a:hover {
+    opacity: 90%;
+    transition: 0.2s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+
+}

@@ -317,6 +317,7 @@ body {
   
   .footer .content p {
     margin-bottom: 1.3rem;
+    text-align: center;
   }
   
   .footer .content a {
@@ -331,6 +332,7 @@ body {
   .footer .content h4 {
     margin-bottom: 1.3rem;
     font-size: 19px;
+    text-align: center;
   }
   
   footer {
