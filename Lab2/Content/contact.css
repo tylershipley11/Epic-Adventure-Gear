@@ -7,12 +7,14 @@
     width: 100vw;
 }
 
-form{
+form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
+    background-color: blanchedalmond;
+    justify-items: center;
 }
 
 .info {
@@ -20,23 +22,45 @@ form{
     padding: 10px;
     width: 30%;
     min-width: 200px;
+    margin: 0 auto;
 }
 
-.form input, select, textarea{
+.form input,
+select,
+textarea {
     margin: 10px 0 0 0;
     width: 80%;
     min-height: 2em;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    display: block;
 }
 
-.form label{
+.form label {
     display: block;
     margin-top: 1em;
 }
 
+.form label.no-label {
+    display: flex;
+    /* Makes each label and checkbox a block element */
+    align-items: center;
+    gap: 5px;
+    /* Spacing between checkbox and label */
+    cursor: pointer;
+    margin-bottom: -10px
+}
+
+.form select {
+    width: 82%;
+    cursor: pointer;
+}
 
 
+fieldset {
+    border: none;
+    margin-bottom: 1em;
+}
 
 .form {
     padding: 10px;
@@ -45,15 +69,29 @@ form{
     min-width: 300px;
 }
 
+input[type="checkbox"] {
+    width: auto;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    cursor: pointer;
+}
+
 @media (max-width: 670px) {
     .info {
-      width: 75%;
-      display: block;
+        width: 75%;
+        display: block;
     }
 
-    .form{
+    .form {
         display: block;
         width: 75%;
     }
-  
-  }
+}
