@@ -1,0 +1,14 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    background-color: aquamarine;
+    width: 300px;
+}
+
+.form {
+    background-color: brown;
+    width: 700px;
+}
