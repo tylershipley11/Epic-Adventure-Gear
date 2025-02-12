@@ -1,8 +1,8 @@
-body{
+body {
     font-family: 'Lucida Sans',
-    'Lucida Sans Regular',
-    'Lucida Grande', 'Lucida Sans Unicode',
-    Geneva, Verdana, sans-serif;
+        'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
 }
 
 
@@ -15,24 +15,32 @@ body{
     width: 100vw;
 }
 
-.forms-of-contact{
+.forms-of-contact {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.icon{
+.icon {
     position: relative;
-    float:inline-start;
-    width: 25%
+    float: inline-start;
+    width: 20%;
+    padding: none;
+    margin-bottom: 20px;
 }
 
-a{
-    color:black;
+@media (max-width: 320px) {
+    .forms-of-contact {
+        font-size: 14px;
+    }
+}
+
+a {
+    color: black;
     text-decoration: none;
 }
 
 form {
-    width: 60vw;
+    width: 80%;
     max-width: 500px;
     min-width: 300px;
     margin: 1em auto 1em;
