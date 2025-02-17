@@ -66,7 +66,15 @@ function formValidator(){
             alert("Form successfully submitted!");
 
             //clear form for security reasons
-            document.getElementById("contact-form").reset(); 
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("inquiry").value = ""; // Reset dropdown
+
+            // Uncheck checkboxes if they were selected
+            document.getElementById("contact-method-phone").checked = false;
+            document.getElementById("contact-method-email").checked = false;
         }
     });
 }
