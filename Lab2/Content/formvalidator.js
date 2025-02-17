@@ -70,9 +70,7 @@ function formValidator(){
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
             document.getElementById("message").value = "";
-            document.getElementById("inquiry").value = ""; // Reset dropdown
-
-            // Uncheck checkboxes if they were selected
+            document.getElementById("inquiry").value = ""; 
             document.getElementById("contact-method-phone").checked = false;
             document.getElementById("contact-method-email").checked = false;
         }
