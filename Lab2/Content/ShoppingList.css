@@ -1,0 +1,158 @@
+body {
+	background-color: #1A1F2A;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 0; 
+	padding: 0;
+}
+
+#page {
+	background-color: transparent;
+	padding: 5px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+ul {
+	background-color: transparent;
+	border:none;
+	padding: 0;
+	margin: 0;
+	width: 80%;
+	margin: 0 auto ;
+}
+
+li {
+	font-size: 16px;
+	letter-spacing: .05em;
+	list-style-type: none;
+ 	padding: 10px 20px;
+	margin-top: 10px;
+	border-radius: 16px;
+}
+
+li.selected {
+	background-color: #1391FF;
+	color: #ffffff;
+}
+
+li.unselected {
+	background-color: #333846;
+	color: #ffffff;
+}
+
+input[type="text"]{
+	background-color: #dddddd;
+	font-size: 16px;
+	letter-spacing: .05em;
+ 	padding: 10px 20px;
+	border-radius: 16px;
+	border: none;
+	width: 100%;
+	color: #000;
+}
+
+#add{
+	background-color: #1391FF;
+	color: white;
+	border-radius: 16px;
+	border: none ;
+	text-align: center;
+	width: 10%;
+	min-width: 50px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	transition: 0.3s;
+}
+
+#add svg{
+	position: absolute;
+}
+
+#addgroup{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	margin-bottom: 15px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.hot {
+	background-color: #d7666b;
+	color: #fff;
+	text-shadow: 2px 2px 1px #914141;
+	border-top: 1px solid #e99295;
+	border-bottom: 1px solid #914141;
+}
+
+.complete { /* could use for "greyed out" items */
+  background-color: #999;
+	color: #fff;
+	background-position: center, right;
+	background-repeat: no-repeat;
+	border-top: 1px solid #666;
+    text-shadow: 2px 2px 1px #333;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+#controls{
+	margin: 25px auto;
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+}
+
+button:not(#add) {
+  background-color: #777777;
+  margin: 5px;
+  border-radius: 16px;
+  width: 100px;
+  transition-duration: 0.3s;
+  border: none;
+  color: white;
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+#remove:hover{
+	background-color: red;
+}
+
+
+
+input {
+  background-color: #d0d0d0;
+}
+
+h2 {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+}
