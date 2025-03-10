@@ -1,85 +1,83 @@
 var currentItem; // refers to currently selected list item (<li> element)
 
 /* init function is invoked when the body of page has completely loaded */
-function init()
-{
+function init() {
   // assign all list items to the unselected class by default
   var listItems = document.querySelectorAll('li');
   var i;
-  for (i = 0; i < listItems.length; i++)
-  {
+  for (i = 0; i < listItems.length; i++) {
     listItems[i].className = 'unselected'; // change class to selected
   }
-  
+
   var glist = document.getElementById("glist");
   // initialize currentItem to the last item and select it
   currentItem = glist.lastChild;
   currentItem.className = 'selected';
 }
 
-function scrollUp(){
+function scrollUp() {
   var previousItem = currentItem.previousElementSibling;
   var glist = document.getElementById("glist");
 
-  if (previousItem){
+  if (previousItem) {
     currentItem.className = 'unselected';
     currentItem = previousItem;
     currentItem.className = 'selected';
   }
-  else{
+  else {
     currentItem.className = 'unselected';
     currentItem = glist.lastElementChild;
     currentItem.className = 'selected';
   }
 }
 
-function scrollDown(){
+function scrollDown() {
   var nextItem = currentItem.nextElementSibling;
   var glist = document.getElementById("glist");
 
-  if (nextItem){
+  if (nextItem) {
     currentItem.className = 'unselected';
     currentItem = nextItem;
     currentItem.className = 'selected';
   }
-  else{
+  else {
     currentItem.className = 'unselected';
     currentItem = glist.firstElementChild;
     currentItem.className = 'selected';
   }
 }
 
-function moveFirst(){
+function moveFirst() {
   var glist = document.getElementById("glist");
   var firstItem = glist.firstElementChild;
 
-  if (currentItem !== firstItem){
+  if (currentItem !== firstItem) {
     glist.insertBefore(currentItem, firstItem);
   }
-  else{
+  else {
     alert("This item is already at the top of the list");
   }
 }
 
-function moveLast(){
+function moveLast() {
   var glist = document.getElementById("glist");
   var lastItem = glist.lastElementChild;
 
-  if(currentItem !== lastItem){
+  if (currentItem !== lastItem) {
     glist.appendChild(currentItem);
   }
-  else{
+  else {
     alert("This item is already at the bottom of the list")
   }
 }
 
-function addItem(){
+function addItem() {
   var inputField = document.querySelector('#addgroup input[type="text"]');
   var newItemText = inputField.value.trim();
 
-  if(newItemText === ""){
+  if (newItemText === "") {
     alert("Please enter a product name to add.");
-    return; 
+    return;
   }
 
   var newItem = document.createElement("li");
@@ -89,7 +87,7 @@ function addItem(){
   var glist = document.getElementById("glist");
   glist.appendChild(newItem);
 
-  if(currentItem){
+  if (currentItem) {
     currentItem.className = 'unselected';
   }
 
@@ -100,7 +98,7 @@ function addItem(){
   inputField.value = "";
 }
 
-function removeItem(){
+function removeItem() {
   var glist = document.getElementById("glist");
 
   if (!currentItem) {
@@ -123,7 +121,7 @@ function removeItem(){
   } else {
     alert("No more items are in this List");
   }
-  
+
   currentItem = newCurrent;
 }
 
