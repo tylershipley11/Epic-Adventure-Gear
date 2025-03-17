@@ -65,3 +65,8 @@ body {
 .main-content p {
     margin-bottom: 3em;
 }
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
