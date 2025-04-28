@@ -68,7 +68,7 @@
                 <div class="card-container">
 
                     <div class="card">
-                        <img class="img-top" src="../img/AdventureIMG.jpeg" alt="person hiking">
+                        <img class="img-top" src="../img/hiking.jpeg" alt="person hiking">
 
                         <div class="text-below">
                             <h3>EMBARK</h3>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="img-top" src="../img/AdventureIMG.jpeg" alt="adventure pic">
+                        <img class="img-top" src="../img/snowboots.jpeg" alt="adventure pic">
                         <div class="text-below">
                             <h3>PREPARE</h3>
                             <p>
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="img-top" src="../img/AdventureIMG.jpeg" alt="adventure pic">
+                        <img class="img-top" src="../img/woods.jpeg" alt="adventure pic">
 
 
                         <div class="text-below">

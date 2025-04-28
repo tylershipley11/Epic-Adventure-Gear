@@ -103,9 +103,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* Center text & icon horizontally */
   gap: 8px;
-  /* Space between text and icon container */
   font-size: 20px;
   color: #fff;
   background-color: #232323;
@@ -113,9 +111,7 @@ body {
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
-  /* if you want the icons to be absolutely positioned inside */
   overflow: hidden;
-  /* ensures nothing peeks outside the button if scaled */
 }
 
 .cta-btn:hover {
@@ -127,15 +123,12 @@ body {
                 CHEST ICON SWAPPING
   ==========================================*/
 
-/* Container for the icons */
 .icons {
   position: relative;
-  /* so icons can overlap in the same spot */
   width: 40px;
   height: 40px;
 }
 
-/* Both icons share same absolute positioning */
 .chest-icon {
   position: absolute;
   top: 0;
@@ -144,23 +137,18 @@ body {
   height: 40px;
 
   transition: opacity 0.3s ease;
-  /* Smooth fade */
   opacity: 0;
-  /* Hidden by default */
 }
 
-/* The closed chest is shown by default */
 .closed {
   opacity: 1;
 }
 
-/* The open chest is hidden initially */
 .open {
   opacity: 0;
   transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-/* On hover*/
 .cta-btn:hover .closed {
   opacity: 0;
 }
@@ -181,10 +169,7 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding: 10px;
-  font-family: 'Lucida Sans',
-    'Lucida Sans Regular',
-    'Lucida Grande', 'Lucida Sans Unicode',
-    Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 .who-are-we {
@@ -263,14 +248,7 @@ body {
   }
 }
 
-@media (max-width: 939px) {
-
-  .card-container :nth-child(3) {
-    width: 620px;
-    height: min-content;
-  }
-
-}
+@media (max-width: 939px) {}
 
 
 @media (max-width: 324px) {
@@ -300,7 +278,7 @@ body {
   width: 100%;
   text-transform: uppercase;
   margin: 0 auto;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 .heading {
@@ -310,7 +288,7 @@ body {
   text-transform: uppercase;
   padding-top: 20px;
   margin: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 .heading img {
@@ -378,5 +356,187 @@ footer hr {
 @media (orientation: landscape) and (max-height: 500px) {
   .footer {
     position: unset;
+  }
+}
+
+
+/* -----------------------------------
+   Product Page Styling
+----------------------------------- */
+
+
+/* Products page container */
+.products-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Intro paragraph */
+.products-page .intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+
+.products-page .intro a {
+  transition: 0.2s;
+  color: #000;
+}
+
+
+.products-page .intro a:hover {
+  color: #464646;
+}
+
+
+.products-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.products-page h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #000;
+  margin: 0.5rem auto;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+
+}
+
+.category-list li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #232323;
+}
+
+.category-list li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.category-list li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+.category-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.category-table th,
+.category-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.category-table thead {
+  background: #f4f4f4;
+}
+
+.category-table .table-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.category-table td small {
+  color: #666;
+}
+
+.out-of-stock {
+  color: red;
+  font-style: italic;
+}
+
+
+@media (max-width: 600px) {
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-table,
+  .category-table thead,
+  .category-table tbody,
+  .category-table th,
+  .category-table td,
+  .category-table tr {
+    display: block;
+  }
+
+  .category-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .category-table tr {
+    margin-bottom: 1.2rem;
+  }
+
+  .category-table td {
+    border: none;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .category-table td::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding: 0.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .category-table td:nth-of-type(1)::before {
+    content: "Image";
+  }
+
+  .category-table td:nth-of-type(2)::before {
+    content: "Name & Description";
+  }
+
+  .category-table td:nth-of-type(3)::before {
+    content: "Price";
+  }
+
+  .category-table td:nth-of-type(4)::before {
+    content: "In Stock";
   }
 }

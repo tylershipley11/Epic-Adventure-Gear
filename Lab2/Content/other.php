@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Adventure Gear</title>
+    <link rel="stylesheet" href="other.css">
     <link rel="stylesheet" href="styles.css">
     <link type="image/x-icon" sizes="16x16" rel="icon" href="../img/Untitled-2.svg">
 </head>
